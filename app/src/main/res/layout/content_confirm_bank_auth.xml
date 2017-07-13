@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ng.techhouse.tinggqr.ConfirmBankAuth"
+    tools:showIn="@layout/activity_confirm_bank_auth">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp">
+
+        <in.raveesh.customtype.TextView
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:customtypeface="fonts/MavenPro-Regular.ttf"
+            android:layout_marginBottom="10dp"
+            android:text="Please enter your Bank OTP"
+            android:textSize="16sp"
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/hintcolor1"
+            >
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/input_pin"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:singleLine="true"
+                android:drawableLeft="@drawable/lock"
+                android:drawableTint="@color/colorAccent"
+                android:hint="OTP Pin"
+                android:inputType="number"
+                android:maxLength="8" />
+        </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardno_layout"
+        android:orientation="vertical">
+
+        <in.raveesh.customtype.TextView
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:customtypeface="fonts/MavenPro-Regular.ttf"
+            android:layout_marginBottom="10dp"
+            android:text="Please sepcify the last 4 digits of your Bank Card"
+            android:textSize="16sp"
+            />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/hintcolor1"
+            >
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/input_cardno"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_marginTop="26dp"
+                android:singleLine="true"
+                android:drawableLeft="@drawable/ic_card"
+                android:drawableTint="@color/colorAccent"
+                android:hint="last four Card Digits"
+                android:inputType="number"
+                android:maxLength="4" />
+        </android.support.design.widget.TextInputLayout></LinearLayout>
+
+
+        <Button
+            android:text="Submit"
+            android:layout_marginTop="25dp"
+            android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorAccent"
+            android:id="@+id/submitBtn" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_peer_to_peer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ng.techhouse.tinggqr.PeerToPeer"
+    tools:showIn="@layout/activity_peer_to_peer">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/hintcolor1"
+                >
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/input_mobile_no"
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_marginTop="16dp"
+                    android:singleLine="true"
+                    android:drawableLeft="@drawable/ic_phone"
+                    android:drawableTint="@color/colorAccent"
+                    android:hint="Recipient Mobile Number"
+                    android:inputType="number"
+                    android:maxLength="11" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_contacts"
+                android:id="@+id/contact_picker"
+                />
+
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/hintcolor1"
+            >
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/input_account_name"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_marginTop="16dp"
+                android:singleLine="true"
+                android:drawableLeft="@drawable/account"
+                android:drawableTint="@color/colorAccent"
+                android:hint="Account Name"
+                android:editable="false"
+                android:inputType="none"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/hintcolor1"
+            >
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/input_amount"
+                android:layout_marginTop="16dp"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:singleLine="true"
+                android:drawableLeft="@drawable/currency_ngn18"
+                android:drawableTint="@color/colorAccent"
+                android:maxLength="9"
+                android:hint="Amount"
+                android:editable="false"
+                android:inputType="number"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:text="Submit"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorAccent"
+            android:id="@+id/submitBtn" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

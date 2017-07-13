@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_airtime_payment_option"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ng.techhouse.tinggqr.AirtimePaymentOption"
+    tools:showIn="@layout/activity_airtime_payment_option">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical"
+        android:id="@+id/l">
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view"
+            android:layout_marginBottom="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textView"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            card_view:cardCornerRadius="4dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:id="@+id/one"
+                android:orientation="vertical">
+
+                <in.raveesh.customtype.TextView
+                    android:id="@+id/tv_networkname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    app:customtypeface="fonts/MavenPro-Regular.ttf"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:text="" />
+
+
+                <in.raveesh.customtype.TextView
+                    android:id="@+id/tv_mobile_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    app:customtypeface="fonts/MavenPro-Bold.ttf"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:text="" />
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/two"
+                android:padding="5dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                >
+                <in.raveesh.customtype.TextView
+                    android:id="@+id/nairaicon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:customtypeface="fonts/MavenPro-Regular.ttf"
+                    android:textSize="20sp"
+                    android:text="" />
+
+                <in.raveesh.customtype.TextView
+                    android:id="@+id/amount"
+                    android:layout_width="match_parent"
+                    app:customtypeface="fonts/MavenPro-Bold.ttf"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:text="" />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroup3">
+
+
+            <LinearLayout
+                android:id="@+id/card_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp">
+
+                <ListView
+                    android:id="@+id/card_list_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/add_card"
+            android:layout_marginLeft="25dp"
+            android:layout_gravity="center_vertical"
+            android:padding="10dp"
+            android:background="@drawable/rounded_corners1"
+            >
+            <in.raveesh.customtype.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:customtypeface="fonts/MavenPro-Regular.ttf"
+                android:drawableTop="@drawable/ic_add"
+                android:text="Enter New Card Number"
+                android:textSize="8sp"
+                android:textColor="@color/colorAccent"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:text="Proceed"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorAccent"
+        android:id="@+id/payBtn" />
+
+</RelativeLayout>

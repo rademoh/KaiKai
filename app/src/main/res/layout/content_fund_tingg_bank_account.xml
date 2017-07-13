@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ng.techhouse.tinggqr.FundTinggBankAccount"
+    tools:showIn="@layout/activity_fund_tingg_bank_account">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical"
+        android:id="@+id/l">
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view"
+            android:layout_marginBottom="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            card_view:cardCornerRadius="4dp">
+
+
+            <in.raveesh.customtype.TextView
+                android:id="@+id/product_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:layout_marginBottom="10dp"
+                app:customtypeface="fonts/MavenPro-Regular.ttf"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:text="Funding Amount" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                >
+
+                <in.raveesh.customtype.TextView
+                    android:id="@+id/nairaicon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:customtypeface="fonts/MavenPro-Regular.ttf"
+                    android:textSize="20sp"
+                    android:text="" />
+
+                <in.raveesh.customtype.TextView
+                    android:id="@+id/funding_amount"
+                    app:customtypeface="fonts/MavenPro-Bold.ttf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:text="" />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+            <LinearLayout
+                android:id="@+id/card_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+
+                <ListView
+                    android:id="@+id/card_list_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+      <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:id="@+id/add_card"
+            android:layout_marginLeft="25dp"
+            android:layout_gravity="center_vertical"
+            android:padding="10dp"
+            android:background="@drawable/rounded_corners1"
+            >
+            <in.raveesh.customtype.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:customtypeface="fonts/MavenPro-Regular.ttf"
+                android:drawableTop="@drawable/ic_add"
+                android:text="Add New Bank Account Number"
+                android:textSize="8sp"
+                android:textColor="@color/colorAccent"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:text="Proceed"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorAccent"
+        android:id="@+id/payBtn" />
+
+</RelativeLayout>

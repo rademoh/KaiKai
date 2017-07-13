@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_gravity="center_vertical">
+
+
+        <in.raveesh.customtype.TextView
+            android:text="Share Your Tingg ID by QR Or Code To Receive Payment"
+            app:customtypeface="fonts/MavenPro-Regular.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:textSize="10sp"
+            />
+
+
+        <ImageView
+            android:id="@+id/user_barcode"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:elevation="5dp"
+            android:padding="5dp"
+            android:scaleType="centerCrop"
+            />
+
+
+        <in.raveesh.customtype.TextView
+            android:text=""
+            app:customtypeface="fonts/MavenPro-Regular.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:textSize="12sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/input_customer_code" />
+
+
+
+    </LinearLayout>
+</ScrollView>

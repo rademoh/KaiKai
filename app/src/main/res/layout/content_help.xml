@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_help"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ng.techhouse.tinggqr.navactivity.Help"
+    tools:showIn="@layout/activity_help">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <in.raveesh.customtype.TextView
+            app:customtypeface="fonts/MavenPro-Regular.ttf"
+            android:paddingTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="Below is a list of our most frequently asked questions about Tingg Payment System"
+            />
+        <in.raveesh.customtype.TextView
+            app:customtypeface="fonts/MavenPro-Bold.ttf"
+            android:paddingTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="Q: Who is Cellulant Nig. Ltd?"
+            />
+
+        <in.raveesh.customtype.TextView
+            app:customtypeface="fonts/MavenPro-Regular.ttf"
+            android:paddingTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp" android:text="A: Cellulant is the leading Mobile Commerce Network Operator in Africa that manages, delivers and bills for digital content and commerce services actualised over telecom networks."
+            />
+
+        <in.raveesh.customtype.TextView
+            app:customtypeface="fonts/MavenPro-Bold.ttf"
+            android:paddingTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp" android:text="Q: Cellulant Nig. Customer Care Lines"
+            />
+        <in.raveesh.customtype.TextView
+            app:customtypeface="fonts/MavenPro-Regular.ttf"
+            android:paddingTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp" android:text="A: Telephone: 08082347951, 08165622663, Email: wallet@cellulant.com.ng"
+            />
+        <in.raveesh.customtype.TextView
+            app:customtypeface="fonts/MavenPro-Bold.ttf"
+            android:paddingTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp" android:text="Q: What is Tingg?"
+            />
+        <in.raveesh.customtype.TextView
+            app:customtypeface="fonts/MavenPro-Regular.ttf"
+            android:paddingTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp" android:text="A: Tingg is a mobile payment platform that allows registered users to transfer money, buy airtime and carry out transactions on their GSM mobile phones. Tingg is menu driven and can be accessed 24/7."
+            />
+        <in.raveesh.customtype.TextView
+            app:customtypeface="fonts/MavenPro-Bold.ttf"
+            android:paddingTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp" android:text="Q: How do I access my Tingg account?"
+            />
+        <in.raveesh.customtype.TextView
+            app:customtypeface="fonts/MavenPro-Regular.ttf"
+            android:paddingTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp" android:text="A: Using the Tingg application that can be downloaded unto mobile phones, laptops,Personal computers, Ipads, tablets etc Via the Tingg Wallet WAP site on your mobile phone Tingg Wallet is also accessible online Tingg Wallet can also be accessed via our dedicated voice lines (IVR - Interactive Voice Response) Tingg Wallet can also be accessed, using USSD (Unstructured Supplementary Service Data)"
+            />
+        <in.raveesh.customtype.TextView
+            app:customtypeface="fonts/MavenPro-Bold.ttf"
+            android:paddingTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp" android:text="Q: What kinds of transactions can I carry out on my Tingg account?"
+            />
+        <in.raveesh.customtype.TextView
+            app:customtypeface="fonts/MavenPro-Regular.ttf"
+            android:paddingTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp" android:text="A: You can buy airtime (logical and VTU) Transfer and receive money Purchase products and services (bills for water, elctricity, payTV etc) Pay for content services i.e. bulk SMS, caller ringback tones, news,info services etc Cash withdrawal and deposits Access to administrative functions i.e. balances, change PIN,statement etc Purchase scratch cards for account recharge."
+            />
+        <in.raveesh.customtype.TextView
+            app:customtypeface="fonts/MavenPro-Bold.ttf"
+            android:paddingTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp" android:text="Q: What are the service charges?"
+            />
+        <in.raveesh.customtype.TextView
+            app:customtypeface="fonts/MavenPro-Regular.ttf"
+            android:paddingTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp" android:text="A: Depending on the service, service charges are set between N25-N100 per transaction."
+            />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</ScrollView>

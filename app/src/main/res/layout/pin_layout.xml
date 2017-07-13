@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content_pin_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:gravity="center_horizontal">
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/tingg_logo_s"
+        android:id="@+id/imageView3"
+
+        />
+
+    <in.raveesh.customtype.TextView
+        app:customtypeface="fonts/MavenPro-Bold.ttf"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="Enter Pin"
+        />
+
+    <LinearLayout
+        android:id="@+id/root_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/otp_one"
+            android:layout_width="28dp"
+            android:layout_height="48dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:inputType="numberPassword|number"
+            android:nextFocusLeft="@+id/otp_one"
+            android:nextFocusRight="@+id/otp_two" />
+
+        <EditText
+            android:id="@+id/otp_two"
+            android:layout_width="28dp"
+            android:layout_height="48dp"
+            android:layout_marginRight="10dp"
+            android:inputType="numberPassword|number"
+            android:gravity="center"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:nextFocusLeft="@+id/otp_one"
+            android:nextFocusRight="@+id/otp_three" />
+
+        <EditText
+            android:id="@+id/otp_three"
+            android:layout_width="28dp"
+            android:layout_height="48dp"
+            android:layout_marginRight="10dp"
+            android:inputType="numberPassword|number"
+            android:gravity="center"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:nextFocusLeft="@+id/otp_two"
+            android:nextFocusRight="@+id/otp_four" />
+
+        <EditText
+            android:id="@+id/otp_four"
+            android:layout_width="28dp"
+            android:layout_height="48dp"
+            android:inputType="numberPassword|number"
+            android:gravity="center"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:nextFocusLeft="@+id/otp_three"
+            android:nextFocusRight="@+id/otp_four" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/submitBtn"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:background="@color/colorAccent"
+        android:text="Pay"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="15sp" />
+</LinearLayout>
+
+
+
+
+
+
+
+</RelativeLayout>
+
+

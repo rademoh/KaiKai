@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_about_us"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ng.techhouse.tinggqr.navactivity.AboutUs"
+    tools:showIn="@layout/activity_about_us">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <in.raveesh.customtype.TextView
+            app:customtypeface="fonts/MavenPro-Regular.ttf"
+            android:paddingTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text=" Cellulant is a member company of the Cellulant Corporation which has commercial services running in Kenya, Ghana, Malawi, Nigeria, Zambia, Zimbabwe, South-Sudan, South Africa, Uganda , Botswana and the EU. Cellulant Wallet is licensed and regulated by Central bank of Nigeria(CBN) to provide mobile payment backbone services to some of the biggest banks and fast-moving consumer goods company on the continent.
+            We are a digital financial services company that specializes in mobile and other forms of E-payments.
+"
+            />
+        <in.raveesh.customtype.TextView
+            app:customtypeface="fonts/MavenPro-Regular.ttf"
+            android:paddingTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="To know more about us and to see a list of those we work with, you can visit us on http://cellulant.com.  Tingg is powered by Cellulant."
+            />
+
+        <in.raveesh.customtype.TextView
+            app:customtypeface="fonts/MavenPro-Regular.ttf"
+            android:paddingTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp" android:text="The wallet is the digital version of your physical wallet, debit / credit cards. It allows you to buy , pay bills, send &amp; receive money and you to manage all your financial transactions from your wallet securely and most importantly privately. Also giving you the control, speed, privacy and mobility you need with your money any time any day."
+            />
+
+        <in.raveesh.customtype.TextView
+            app:customtypeface="fonts/MavenPro-Regular.ttf"
+            android:paddingTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp" android:text="We operate a payments ecosystem connecting financial sector customers, Mobile Network Operators and businesses to their increasingly mobile consumers. Our wallet brings to you an ecosystem of billers, service providers, that you interact with on a daily basis. There is no longer any need to search far and wide for those you want to pay; talk to us and we will make it easy for you to pay them."
+            />
+        <in.raveesh.customtype.TextView
+            app:customtypeface="fonts/MavenPro-Regular.ttf"
+            android:paddingTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp" android:text="All you need to use Tingg is your mobile telephone number and with this there's no need to manage multiple bank accounts &amp; reconciliation, just fund your wallet account and spend from there. In addition, as a Tingg holder you can also have a Cellulant Wallet Card(ATM) which can be use all around the world."
+            />
+
+
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/tingg_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:id="@+id/rb_card"
+            />
+
+
+        <in.raveesh.customtype.TextView
+            android:layout_width="match_parent"
+            android:id="@+id/extra_data"
+            android:layout_height="wrap_content"
+            app:customtypeface="fonts/MavenPro-Regular.ttf"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:text="" />
+
+
+        <ImageView
+            android:id="@+id/cardimage"
+            android:layout_width="35dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.9"
+            android:gravity="right">
+
+            <ImageView
+                android:id="@+id/deleteBtn"
+                android:layout_width="35dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_delete"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

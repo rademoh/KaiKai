@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="20dp"
+        android:id="@+id/cover"
+        android:orientation="vertical">
+
+
+        <in.raveesh.customtype.TextView
+            app:customtypeface="fonts/MavenPro-Bold.ttf"
+            android:id="@+id/name"
+            android:paddingTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="Habibi"
+            />
+        <in.raveesh.customtype.TextView
+            app:customtypeface="fonts/MavenPro-Regular.ttf"
+            android:id="@+id/phoneno"
+            android:paddingTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="08184859505"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="13dp"
+        android:gravity="end">
+
+        <ImageView
+            android:id="@+id/deleteBtn"
+            android:layout_width="35dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_delete"
+
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

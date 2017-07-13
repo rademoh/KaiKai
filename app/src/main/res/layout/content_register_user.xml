@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true">
+
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_title"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ScrollView
+            android:id="@+id/container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="20dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/hintcolor"
+                >
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/input_fullname"
+                    android:drawableRight="@drawable/account"
+                    android:textColor="@color/colorWhite"
+                    android:drawableTint="@color/colorAccent"
+                    android:singleLine="true"
+                    android:hint="Full Name"
+                    android:inputType="text"
+                    android:maxLength="30" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/hintcolor"
+                >
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/input_email"
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:drawableRight="@drawable/ic_email"
+                    android:textColor="@color/colorWhite"
+                    android:drawableTint="@color/colorAccent"
+                    android:singleLine="true"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="30" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/hintcolor"
+                >
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:id="@+id/input_primaryno"
+                    android:drawableRight="@drawable/ic_phone"
+                    android:textColor="@color/colorWhite"
+                    android:drawableTint="@color/colorAccent"
+                    android:singleLine="true"
+                    android:hint="Phone Number"
+                    android:inputType="number"
+                    android:maxLength="11" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/hintcolor"
+                android:id="@+id/gender_layout"
+                >
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:id="@+id/input_gender"
+                    android:drawableRight="@drawable/ic_arrow_drop"
+                    android:textColor="@color/colorWhite"
+                    android:drawableTint="@color/colorAccent"
+                    android:singleLine="true"
+                    android:hint="Gender"
+                    android:inputType="none"
+                    android:maxLength="15" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/hintcolor"
+                >
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:id="@+id/input_dob"
+                    android:drawableRight="@drawable/ic_date"
+                    android:textColor="@color/colorWhite"
+                    android:drawableTint="@color/colorAccent"
+                    android:singleLine="true"
+                    android:hint="Date Of Birth"
+                    android:inputType="text"
+                    android:editable="false"
+                    android:maxLength="15" />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/hintcolor"
+                >
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:id="@+id/input_occupation"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginTop="16dp"
+                    android:singleLine="true"
+                    android:drawableRight="@drawable/ic_work"
+                    android:drawableTint="@color/colorAccent"
+                    android:hint="Occupation"
+                    android:inputType="text"
+                    android:maxLength="20" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/hintcolor"
+                >
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:id="@+id/input_address"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginTop="16dp"
+                    android:singleLine="true"
+                    android:drawableRight="@drawable/ic_home"
+                    android:drawableTint="@color/colorAccent"
+                    android:hint="Address"
+                    android:inputType="text"
+                    android:maxLength="35" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/hintcolor"
+                >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/input_secret_question"
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginTop="16dp"
+                    android:singleLine="true"
+                    android:drawableTint="@color/colorAccent"
+                    android:hint="Secret Question"
+                    android:inputType="text"
+                    android:maxLength="35" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/hintcolor"
+                >
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/input_secret_answer"
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginTop="16dp"
+                    android:singleLine="true"
+                    android:drawableTint="@color/colorAccent"
+                    android:hint="Secret Question Answer"
+                    android:inputType="text"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnSubmit"
+                android:layout_margin="22dp"
+                android:background="@color/colorPrimary"
+                android:text="Sign Up"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

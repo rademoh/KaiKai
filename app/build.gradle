@@ -1,0 +1,143 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.0"
+
+    defaultConfig {
+        applicationId "com.ng.techhouse.tinggqr"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 9
+        versionName "1.9"
+        multiDexEnabled true
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //compile 'com.google.android.gms:play-services:9.0.2'
+    // compile 'com.edwardvanraak:MaterialBarcodeScanner:0.0.6-ALPHA'
+    // CardView
+    //        compile 'io.card:android-sdk:5.4.2'
+    /* compile ('com.github.orangegangsters:lollipin:2.0.0@aar') {
+            transitive = true
+        }*/
+
+
+    compile 'com.android.support:appcompat-v7:25.1.0'
+    compile 'com.google.android.gms:play-services-vision:9.0.2'
+    compile 'androidmads.library.qrgenearator:QRGenearator:1.0.0'
+    compile 'com.scottyab:aescrypt:0.0.1'
+    compile 'com.github.clans:fab:1.6.4'
+    compile 'com.android.support:cardview-v7:25.1.0'
+    compile 'com.android.support:design:25.1.0'
+    compile 'com.android.support:palette-v7:25.1.0'
+    compile 'com.amitshekhar.android:android-networking:0.4.0'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.github.raveeshbhalla:CustomType:1.0.1'
+    compile 'com.github.ganfra:material-spinner:1.1.1'
+    compile 'com.braintreepayments:card-form:3.0.3'
+    compile 'com.google.firebase:firebase-core:9.0.2'
+    compile 'com.google.firebase:firebase-messaging:9.0.2'
+    compile 'com.google.firebase:firebase-crash:9.0.2'
+    compile 'com.github.d-max:spots-dialog:0.7@aar'
+    compile 'com.android.volley:volley:1.0.0'
+    compile 'com.android.support.test.espresso:espresso-core:2.2.2'
+    compile 'com.android.support:support-v4:25.1.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+}
+apply plugin: 'com.google.gms.google-services'
+
+/*
+apply plugin: 'com.android.model.application'
+model {
+    android {
+        compileSdkVersion 25
+        buildToolsVersion "25.0.0"
+
+        defaultConfig.with {
+            applicationId = "com.ng.techhouse.tinggqr"
+            minSdkVersion.apiLevel = 16
+            targetSdkVersion.apiLevel = 25
+            versionCode 1
+            versionName "1.0"
+            multiDexEnabled true
+            testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        }
+
+        dependencies {
+            compile fileTree(dir: 'libs', include: ['*.jar'])
+            androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+                exclude group: 'com.android.support', module: 'support-annotations'
+            })
+            compile 'com.android.support:appcompat-v7:25.0.0'
+            //compile 'com.google.android.gms:play-services:9.0.2'
+            //compile 'com.google.android.gms:play-services-vision:9.0.2'
+            compile 'com.edwardvanraak:MaterialBarcodeScanner:0.0.6-ALPHA'
+
+            compile 'androidmads.library.qrgenearator:QRGenearator:1.0.0'
+            compile 'com.scottyab:aescrypt:0.0.1'
+            compile 'com.github.clans:fab:1.6.4'
+            // CardView
+            compile 'com.android.support:cardview-v7:25.0.+'
+            compile 'com.android.support:design:25.1.0'
+            compile 'com.android.support:palette-v7:25.1.0'
+//            compile 'com.amitshekhar.android:android-networking:0.0.1'
+            compile 'com.amitshekhar.android:android-networking:0.3.0'
+            compile 'com.android.support:multidex:1.0.0'
+            compile 'com.github.raveeshbhalla:CustomType:1.0.1'
+            compile 'com.github.ganfra:material-spinner:1.1.1'
+            compile 'com.braintreepayments:card-form:3.0.3'
+            compile 'io.card:android-sdk:5.4.2'
+            compile 'com.github.ander7agar:android-http-client:0.2.1'
+
+
+            testCompile 'junit:junit:4.12'
+        }
+
+    }
+    android.ndk {
+        moduleName = "c_script"
+
+    }
+    android.buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles.add(file('proguard-rules.pro'))
+            // proguardFiles getDefaultProguardFile('proguard-android.txt')
+
+            //proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    /* android.productFlavors {
+         create("x86-64") {
+             ndk.abiFilters.add("x86_64")
+         }
+     }*/
+//}
+

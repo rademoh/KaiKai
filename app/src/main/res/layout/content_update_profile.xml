@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_update_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ng.techhouse.tinggqr.UpdateProfile"
+    tools:showIn="@layout/activity_update_profile">
+
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_layout"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/input_name"
+                android:drawableLeft="@drawable/account"
+                android:drawableTint="@color/colorAccent"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_marginBottom="5dp"
+                android:singleLine="true"
+                android:hint="Full Name"
+                android:text=""
+                android:textSize="18sp"
+                android:textColor="@color/hintcolor1"
+
+                />
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_marginTop="5dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/input_email"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:drawableLeft="@drawable/ic_email"
+                android:drawableTint="@color/colorAccent"
+                android:singleLine="true"
+                android:hint="Email"
+                android:inputType="text"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_marginTop="5dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/input_gender"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:drawableTint="@color/colorAccent"
+                android:singleLine="true"
+                android:hint="Gender"
+                android:inputType="none"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_marginTop="5dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/input_occupation"
+                android:drawableLeft="@drawable/ic_work"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:drawableTint="@color/colorAccent"
+                android:singleLine="true"
+                android:hint="Occupation"
+                android:inputType="text"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_marginTop="5dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/input_address"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:drawableLeft="@drawable/ic_home"
+                android:drawableTint="@color/colorAccent"
+                android:singleLine="true"
+                android:hint="Address"
+                android:inputType="text"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:text="Update Profile"
+            android:layout_marginTop="30dp"
+            android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorAccent"
+            android:id="@+id/submitBtn" />
+
+    </LinearLayout>
+
+</RelativeLayout>

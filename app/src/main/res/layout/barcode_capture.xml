@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/topLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:keepScreenOn="true">
+
+   <!-- <com.ng.techhouse.tinggqr.camera.CameraSourcePreview
+        android:id="@+id/preview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </com.ng.techhouse.tinggqr.camera.CameraSourcePreview>-->
+
+    <com.ng.techhouse.tinggqr.camera.CameraSourcePreview
+        android:id="@+id/preview"
+        android:layout_gravity="center"
+        android:padding="16dp"
+        android:layout_width="300dp"
+        android:layout_height="280dp"
+       >
+    </com.ng.techhouse.tinggqr.camera.CameraSourcePreview>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent">
+        <in.raveesh.customtype.TextView
+            app:customtypeface="fonts/MavenPro-Regular.ttf"
+            android:textColor="@color/colorWhite"
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:text="SCAN TINGG BARCODE"
+            android:textSize="15sp"
+            />
+    </LinearLayout>
+</LinearLayout>

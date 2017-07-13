@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/one"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+      <ImageView
+            android:layout_width="150dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            app:srcCompat="@drawable/tingglogo300x98"
+            android:id="@+id/login_title" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            >
+
+            <EditText
+                android:id="@+id/input_phoneno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_phone"
+                style="@style/TextAppearance.AppCompat.Small"
+                android:drawableTint="@color/colorAccent"
+                android:singleLine="true"
+                android:hint="Phone Number"
+                android:inputType="number"
+                android:maxLength="11" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/input_password"
+                android:layout_marginTop="8dp"
+                style="@style/TextAppearance.AppCompat.Small"
+                android:singleLine="true"
+                android:drawableLeft="@drawable/lock"
+                android:drawableTint="@color/colorAccent"
+
+                android:hint="Password"
+                android:inputType="numberPassword|number"
+                android:maxLength="10" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_login"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorAccent"
+            android:text="Sign in"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/one"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/secure_logo"
+            android:layout_marginBottom="10dp"
+            android:layout_height="63dp"
+            android:src="@drawable/securemdi"/>
+
+        <View
+            android:layout_below="@+id/secure_logo"
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="2.5dp"
+            android:background="@color/colordevider"
+
+            ></View>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider"
+            android:gravity="center"
+            android:id="@+id/signUp_link6"
+            android:orientation="horizontal"
+            android:paddingTop="20dp">
+
+            <in.raveesh.customtype.TextView
+                android:text="Don't have an account"
+                app:customtypeface="fonts/MavenPro-Regular.ttf"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/signUp_linkR" />
+            <in.raveesh.customtype.TextView
+                android:text="Sign Up"
+                app:customtypeface="fonts/MavenPro-Bold.ttf"
+                android:textSize="15dp"
+                android:textColor="@color/secondary_text_material_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/signUp_link" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

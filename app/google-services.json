@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "215169623020",
+    "firebase_url": "https://tingg-c14e9.firebaseio.com",
+    "project_id": "tingg-c14e9",
+    "storage_bucket": "tingg-c14e9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:215169623020:android:535db8be7a470389",
+        "android_client_info": {
+          "package_name": "com.ng.techhouse.tinggqr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "215169623020-ta62n21ktd8r3t8sp8rq4r41r5f9il9v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5pGgxnT7735-QIQCc4_udrI1nk-2i9QE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/item_view"
+    android:padding="5dp"
+    android:orientation="vertical"
+    android:layout_marginRight="25dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/recharge_img"
+        android:src="@drawable/account"
+        android:layout_gravity="center"
+
+        />
+
+    <in.raveesh.customtype.TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/recharge_title"
+        app:customtypeface="fonts/MavenPro-Regular.ttf"
+        android:layout_gravity="center"
+        android:text="Electricity"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/categoriestext"
+        android:textSize="@dimen/texticons"
+        />
+</LinearLayout>

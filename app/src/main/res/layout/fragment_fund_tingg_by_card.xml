@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.ng.techhouse.tinggqr.FundTinggByCardFragment"
+    tools:showIn="@layout/activity_fund_tingg_by_card">
+
+
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/card_layout"
+        android:orientation="vertical">
+
+
+       <!-- <in.raveesh.customtype.TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:customtypeface="fonts/MavenPro-Regular.ttf"
+            android:text="NEW CARD"
+            />-->
+
+
+        <com.braintreepayments.cardform.view.SupportedCardTypesView
+            android:id="@+id/supported_card_types"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            />
+
+        <com.braintreepayments.cardform.view.CardForm
+            android:id="@+id/card_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+  <Button
+      android:text="Submit"
+      android:layout_below="@+id/card_layout"
+android:layout_marginTop="25dp"
+android:layout_marginBottom="20dp"
+android:textAllCaps="false"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:textColor="@color/colorWhite"
+android:background="@color/colorAccent"
+android:id="@+id/proceedBtn" />
+
+
+</RelativeLayout>

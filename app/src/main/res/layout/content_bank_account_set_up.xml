@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_bank_account_set_up"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ng.techhouse.tinggqr.settings.BankAccountSetUp"
+    tools:showIn="@layout/activity_bank_account_set_up">
+
+
+ <!--   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/one"
+        android:padding="15dp"
+        android:orientation="vertical">
+
+        <in.raveesh.customtype.TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:customtypeface="fonts/MavenPro-Regular.ttf"
+            android:text="SAVED ACCOUNT"
+            />
+
+        <LinearLayout
+            android:id="@+id/tingg_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:id="@+id/rb_tingg"
+                />
+
+
+            <in.raveesh.customtype.TextView
+                android:id="@+id/input_accountno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:customtypeface="fonts/MavenPro-Regular.ttf"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:text="" />
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.9"
+                android:gravity="right">
+
+                <ImageView
+                    android:id="@+id/deleteBtn"
+                    android:layout_width="35dp"
+                    android:layout_height="22dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_delete"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:id="@+id/card_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="15dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp">
+
+        <in.raveesh.customtype.TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            app:customtypeface="fonts/MavenPro-Regular.ttf"
+            android:text="SAVED ACCOUNT"
+            />
+
+        <ListView
+            android:id="@+id/card_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card_layout"
+        android:padding="15dp"
+        android:orientation="vertical">
+
+        <in.raveesh.customtype.TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:customtypeface="fonts/MavenPro-Regular.ttf"
+            android:text="NEW ACCOUNT"
+            />
+
+        <fr.ganfra.materialspinner.MaterialSpinner
+            android:id="@+id/spinner_banklist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:ms_multiline="false"
+            app:ms_hint="Select Bank"
+            app:ms_enableFloatingLabel="true"
+            app:ms_enableErrorLabel="true"
+            app:ms_floatingLabelText="Bank name"
+            app:ms_errorColor="@color/error"
+            app:ms_thickness="0.4dp"
+            app:ms_hintColor="@color/colorPrimaryDark"
+            app:ms_arrowColor="@color/colorPrimary"
+            app:ms_arrowSize="16dp"
+            app:ms_alignLabels="false"
+            app:ms_floatingLabelColor="@color/colorAccent"/>
+
+        <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/hintcolor1"
+        >
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/input_account_no"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_marginTop="16dp"
+            android:singleLine="true"
+            android:drawableLeft="@drawable/ic_apps"
+            android:drawableTint="@color/colorAccent"
+            android:hint="Account Number"
+            android:inputType="number"
+            android:maxLength="10" />
+    </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/hintcolor1"
+            >
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/input_account_name"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_marginTop="16dp"
+                android:singleLine="true"
+                android:drawableLeft="@drawable/account"
+                android:drawableTint="@color/colorAccent"
+                android:hint="Account Name"
+                android:editable="false"
+                android:inputType="none"
+               />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:text="Submit"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorAccent"
+            android:id="@+id/submitBtn" />
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ng.techhouse.tinggqr.settings.LinkTinggCard"
+    tools:showIn="@layout/activity_link_tingg_card">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical"
+       >
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/hintcolor1"
+            >
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/input_cardno"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="30dp"
+                android:singleLine="true"
+                android:drawableLeft="@drawable/lock"
+                android:drawableTint="@color/colorAccent"
+                android:hint="Tingg Card Number"
+                android:inputType="number"
+                android:maxLength="16" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorAccent"
+            android:id="@+id/submitBtn" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

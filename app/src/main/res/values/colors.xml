@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4caeff</color>
+    <color name="colorPrimaryDark">#008bff</color>
+    <color name="colorAccent">#ee5057</color>
+    <color name="accentText">#f26369</color>
+    <color name="accentDarker">#ce040e</color>
+    <color name="divider">#ec3941</color>
+    <color name="green">#69db85</color>
+    <color name="whitediv">#a0e8b2</color>
+    <color name="text1">#29363b</color>
+    <color name="hintcolor1">#767c7e</color>
+    <color name="colordevider">#e5e3e3</color>
+    <color name="error">#E53935</color>
+    <color name="categoriestext">#767c7e</color>
+    <color name="hintcolor">#F5F5F5</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="QRCodeWhiteColor">#ffffff</color>
+    <color name="QRCodeBlackColor">#000000</color>
+    <color name="secondary_text_material_light">#4caeff</color>
+    <color name="spots_dialog_color">@color/colorAccent</color>
+
+
+
+</resources>

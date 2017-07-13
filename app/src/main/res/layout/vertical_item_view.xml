@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:layout_marginBottom="15dp"
+    android:id="@+id/perView">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        card_view:cardCornerRadius="2dp"
+        card_view:contentPadding="10dp">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+    <!--  ListRow Left sied Thumbnail image -->
+    <LinearLayout android:id="@+id/item_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="30dp">
+
+        <ImageView
+            android:id="@+id/recharge_img"
+            android:layout_width="24dip"
+            android:layout_height="24dip"
+            android:src="@drawable/ic_contacts"
+            />
+
+    </LinearLayout>
+
+
+    <in.raveesh.customtype.TextView
+        app:customtypeface="fonts/MavenPro-Bold.ttf"
+        android:id="@+id/recharge_title"
+        android:paddingTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/item_view"
+        android:layout_toRightOf="@+id/item_view"
+        android:textSize="16sp"
+        android:text="Electricity"
+        />
+
+
+    <!-- Rightend Arrow -->
+    <ImageView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_right"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+
+
+        </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+
+</RelativeLayout>

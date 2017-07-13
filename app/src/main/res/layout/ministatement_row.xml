@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <in.raveesh.customtype.TextView
+                app:customtypeface="fonts/MavenPro-Bold.ttf"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/action"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text=""
+                />
+            <in.raveesh.customtype.TextView
+                app:customtypeface="fonts/MavenPro-Regular.ttf"
+                android:id="@+id/transid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text=""
+                />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/status"/>
+       <!-- <in.raveesh.customtype.TextView
+            app:customtypeface="fonts/MavenPro-Bold.ttf"
+            android:layout_marginTop="10dp"
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text=""
+            />-->
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/currency_ngn18b"/>
+
+            <in.raveesh.customtype.TextView
+                app:customtypeface="fonts/MavenPro-Regular.ttf"
+                android:layout_marginTop="1dp"
+                android:id="@+id/amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="100"
+                />
+
+        </LinearLayout>
+
+        <in.raveesh.customtype.TextView
+            app:customtypeface="fonts/MavenPro-Regular.ttf"
+            android:layout_marginTop="5dp"
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text=""
+            />
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

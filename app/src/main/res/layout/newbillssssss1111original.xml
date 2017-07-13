@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ng.techhouse.tinggqr.MainActivity"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="15dp"
+                android:id="@+id/name_label"
+                android:gravity="center">
+
+                <in.raveesh.customtype.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:customtypeface="fonts/MavenPro-Regular.ttf"
+                    android:text="Hello "
+                    android:textSize="19sp"
+                    android:textColor="@color/colorPrimary"
+                    />
+                <in.raveesh.customtype.TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/tv_name"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    app:customtypeface="fonts/MavenPro-Regular.ttf"
+                    android:textSize="19sp"
+                    android:textColor="@color/colorPrimary"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_below="@+id/name_label"
+                android:id="@+id/divider1"
+                android:layout_width="match_parent"
+                android:layout_height="2.5dp"
+                android:background="@color/divider"
+
+                ></View>
+
+
+
+            <!--**********AMOUNT*************-->
+
+
+            <LinearLayout
+                android:id="@+id/linear2"
+                android:layout_below="@+id/divider1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/bgamount"
+
+                    >
+
+
+                    <LinearLayout
+                        android:layout_weight="0.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginLeft="16dp"
+                        >
+
+                        <in.raveesh.customtype.TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:customtypeface="fonts/MavenPro-Regular.ttf"
+                            android:text="Balance"
+                            android:textSize="15sp"
+                            android:textColor="@color/colorWhite"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="4dp"
+                            >
+
+                            <in.raveesh.customtype.TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:customtypeface="fonts/MavenPro-Regular.ttf"
+                                android:text="NGN"
+                                android:textSize="12sp"
+                                android:textColor="@color/colorWhite"
+
+                                />
+                            <in.raveesh.customtype.TextView
+                                android:id="@+id/tv_balance_amount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:customtypeface="fonts/MavenPro-Regular.ttf"
+                                android:text="0.0"
+                                android:textSize="25sp"
+                                android:layout_marginLeft="2dp"
+                                android:textColor="@color/colorWhite"
+                                />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/fund_wallet"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="5dp"
+                        android:padding="5dp"
+                        android:background="@drawable/rounded_corners"
+                        android:layout_marginTop="4dp"
+                        >
+                        <in.raveesh.customtype.TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:customtypeface="fonts/MavenPro-Regular.ttf"
+                            android:drawableLeft="@drawable/ic_fund"
+                            android:text="Fund Tingg"
+                            android:textSize="13sp"
+                            android:textColor="@color/colorWhite"
+                            />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_below="@+id/linear2"
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="2.5dp"
+                android:background="@color/divider"
+                android:layout_marginBottom="10dp"
+
+                ></View>
+            <!--***********RECHARGE AND BILLS************-->
+
+            <LinearLayout
+                android:id="@+id/recharge"
+                android:layout_below="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+            </LinearLayout>
+
+            <!--*******CATEGORIES***********-->
+
+            <LinearLayout
+                android:layout_below="@+id/recharge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/linear3"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <!--**********MOBILE*************-->
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        android:id="@+id/l_request_money"
+                        >
+                        <ImageView
+                            android:layout_marginTop="13dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/arrow_bottom"
+                            android:layout_gravity="center"
+                            />
+                        <in.raveesh.customtype.TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:customtypeface="fonts/MavenPro-Regular.ttf"
+                            android:text="Receive Payment"
+                            android:gravity="center"
+                            android:layout_marginTop="13dp"
+                            android:layout_marginBottom="23dp"
+                            android:textColor="@color/categoriestext"
+                            android:textSize="@dimen/texticons"
+
+                            />
+                    </LinearLayout>
+
+
+                    <View
+
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/colordevider"
+
+                        ></View>
+
+                    <!--**********datacard*************-->
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        android:id="@+id/l_send_money"
+                        >
+                        <ImageView
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/arrow_top_right"
+                            android:layout_gravity="center"
+                            />
+                        <in.raveesh.customtype.TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:customtypeface="fonts/MavenPro-Regular.ttf"
+                            android:text="Send Payment"
+                            android:gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="20dp"
+                            android:textColor="@color/categoriestext"
+                            android:textSize="@dimen/texticons"
+                            />
+                    </LinearLayout>
+
+                    <View
+
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/colordevider"
+
+                        ></View>
+                    <!--**********dth*************-->
+
+
+                </LinearLayout>
+
+
+
+                <View
+
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colordevider"
+
+                    android:id="@+id/divd"></View>
+
+
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    >
+                    <!--**********landline*************-->
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        android:id="@+id/l_pay_barcode"
+                        >
+                        <ImageView
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/qrcode_scan"
+                            android:layout_gravity="center"
+                            />
+                        <in.raveesh.customtype.TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:customtypeface="fonts/MavenPro-Regular.ttf"
+                            android:text="Pay by QR Code"
+                            android:gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="@color/categoriestext"
+                            android:textSize="@dimen/texticons"
+                            />
+                    </LinearLayout>
+
+                    <View
+
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/colordevider"
+                        ></View>
+                    <!--**********Electricity*************-->
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        android:id="@+id/l_pay_code"
+                        >
+                        <ImageView
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_code"
+                            android:layout_gravity="center"
+                            />
+                        <in.raveesh.customtype.TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:customtypeface="fonts/MavenPro-Regular.ttf"
+                            android:text="Pay by Code"
+                            android:gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="@color/categoriestext"
+                            android:textSize="@dimen/texticons"
+                            />
+                    </LinearLayout>
+
+                    <View
+
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/last"
+                        android:background="@color/colordevider"
+                        ></View>
+
+                    <!--start--><!--end-->
+                </LinearLayout>
+                <View
+
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colordevider"
+                    android:id="@+id/divds"></View>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                <!--**********landline*************-->
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:id="@+id/l_ministatement"
+                    >
+                    <ImageView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_history"
+                        />
+                    <in.raveesh.customtype.TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:customtypeface="fonts/MavenPro-Regular.ttf"
+                        android:text="Mini Statement"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/categoriestext"
+                        android:textSize="@dimen/texticons"
+                        />
+                </LinearLayout>
+
+                <View
+
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colordevider"
+                    ></View>
+                <!--**********Electricity*************-->
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:id="@+id/l_profile"
+                    >
+                    <ImageView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_account"
+                        android:layout_gravity="center"
+                        />
+                    <in.raveesh.customtype.TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:customtypeface="fonts/MavenPro-Regular.ttf"
+                        android:text="Tingg ID"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/categoriestext"
+                        android:textSize="@dimen/texticons"
+                        />
+                </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>/
+
+    <LinearLayout
+        android:id="@+id/recharge_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <in.raveesh.customtype.TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:customtypeface="fonts/MavenPro-Bold.ttf"
+            android:text="Recharge or Pay Bills"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/categoriestext"
+            android:textSize="15dp"
+            />
+
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="4dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:padding="5dp"
+                android:id="@+id/rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fcfbfd"
+                ></android.support.v7.widget.RecyclerView>
+
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</RelativeLayout>

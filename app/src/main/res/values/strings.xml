@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">Tingg</string>
+    <!-- Strings related to MainActivity-->
+    <string name="scan_barcode_button">Scan QR Code</string>
+    <string name="no_barcode_captured"></string>
+    <string name="barcode_error_format">"Error reading barcode: %1$s"</string>
+    <string name="no_internet">No Internet Connection</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- Strings related to barcode scanner -->
+    <string name="identifier">C3LLUL4NT</string>
+    <string name="ok">OK</string>
+    <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
+    <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+    <string name="low_storage_error">Face detector dependencies cannot be downloaded due to low device storage</string>
+    <string name="title_activity_payment">Payment Details</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_confirmation">Payment</string>
+    <string name="title_activity_receive_payment">Receive Payment By Code</string>
+    <string name="title_activity_main2">Payment Code</string>
+    <string name="title_activity_my_profile">Tingg ID </string>
+    <string name="title_activity_register_user">Sign Up</string>
+    <string name="please_wait">please wait .....</string>
+    <string name="invalid_pin">Invalid Pin</string>
+    <string name="requested_resource_notfound">Requested resource not found</string>
+    <string name="error_at_server">Something went wrong at server end</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_change_password">Change Pin</string>
+    <string name="title_activity_bank_account_set_up">Add Bank Account</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_card_set_up">Add Card</string>
+    <string name="purchase">Done</string>
+    <string name="valid">Valid</string>
+    <string name="invalid">Invalid</string>
+    <string name="scan_card">Scan Card</string>
+    <string name="title_activity_electricity_billers"> Select Your Biller</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_utility_details">UtilityDetails</string>
+    <string name="title_activity_cable_billers">Select Your Biller</string>
+    <string name="title_activity_cable_bouquet">Select Product</string>
+    <string name="title_activity_internet_billers">Select Your Biller</string>
+    <string name="title_activity_internet_bouquet">Select Product</string>
+    <string name="title_activity_airtime">Recharge Airtime</string>
+    <string name="title_activity_send_payment">Send Payment</string>
+    <string name="title_activity_peer_to_peer">Tingg Transfer</string>
+    <string name="title_activity_transfer_to_bank">Bank Transfer</string>
+    <string name="title_activity_scan_qr">ScanQR</string>
+    <string name="title_activity_payment_option">Select Payment Option</string>
+    <string name="title_activity_test2">TestActivity2</string>
+    <string name="title_activity_customer_identification">Beneficiary</string>
+    <string name="title_activity_update_profile">Update Profile </string>
+    <string name="title_activity_mini_statement">Mini Statement</string>
+    <string name="title_activity_help">Help</string>
+    <string name="title_activity_about_us">About Us</string>
+    <string name="title_activity_fund_wallet">Fund Tingg</string>
+    <string name="title_activity_fund_wallet_option">Fund Tingg Option</string>
+    <string name="title_activity_contact_us">Contacts</string>
+    <string name="title_activity_airtime_payment_option">Select Payment Option</string>
+    <string name="txt_scan_qr_code">Scan Tingg Barcode</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_add_airtime_beneficiary">Add Beneficiary</string>
+    <string name="title_activity_link_tingg_card">"Link Tingg Card "</string>
+    <string name="title_activity_receive_payment_option">Receive Payment</string>
+    <string name="title_activity_fund_tingg_option">Select Funding Method</string>
+    <string name="title_activity_fund_tingg_bank_account">Bank Account</string>
+    <string name="title_activity_confirm_bank_auth">OTP Verification </string>
+    <string name="title_activity_fund_tingg_by_card">Enter Card Details</string>
+    <string name="title_activity_web_view">Payment Gateway</string>
+
+
+</resources>

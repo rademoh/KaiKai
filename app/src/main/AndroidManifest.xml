@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ng.techhouse.tinggqr">
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <!--
+        <compatible-screens>
+
+        &lt;!&ndash; all small size screens &ndash;&gt;
+        <screen
+            android:screenDensity="ldpi
+            android:screenSize="small"" />
+        <screen
+            android:screenDensity="mdpi"
+            android:screenSize="small" />
+        <screen
+            android:screenDensity="hdpi"
+            android:screenSize="small" />
+        <screen
+            android:screenDensity="xhdpi"
+            android:screenSize="small" />
+        &lt;!&ndash; all normal size screens &ndash;&gt;
+        <screen
+            android:screenDensity="ldpi"
+            android:screenSize="normal" />
+        <screen
+            android:screenDensity="mdpi"
+            android:screenSize="normal" />
+        <screen
+            android:screenDensity="hdpi"
+            android:screenSize="normal" />
+        <screen
+            android:screenDensity="xhdpi"
+            android:screenSize="normal" />
+    </compatible-screens>
+    -->
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- Permission: Allow application to connect to Internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/tingg_logo"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PaymentActivity"
+            android:label="@string/title_activity_payment"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Login"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+         <!--   <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
+   <activity
+            android:name=".SplashScreen"
+            android:icon="@drawable/tingg_logo"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Confirmation"
+            android:label="@string/title_activity_confirmation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ReceivePayment"
+            android:label="@string/title_activity_receive_payment"
+            android:parentActivityName=".ReceivePaymentOption"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ng.techhouse.tinggqr.ReceivePaymentOption" />
+        </activity>
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ng.techhouse.tinggqr.MainActivity" />
+        </activity>
+        <activity
+            android:name=".MyProfile"
+            android:label="@string/title_activity_my_profile"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ng.techhouse.tinggqr.MainActivity" />
+        </activity>
+        <activity
+            android:name=".RegisterUser"
+            android:label="@string/title_activity_register_user"
+            android:parentActivityName=".Login"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ng.techhouse.tinggqr.MainActivity" />
+        </activity>
+        <activity
+            android:name=".settings.ChangePassword"
+            android:label="@string/title_activity_change_password"
+            android:parentActivityName=".settings.Settings"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.ng.techhouse.tinggqr.settings.Settings" />
+
+        <activity
+            android:name=".settings.BankAccountSetUp"
+            android:label="@string/title_activity_bank_account_set_up"
+            android:parentActivityName=".settings.Settings"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ng.techhouse.tinggqr.settings.Settings" />
+        </activity>
+        <activity
+            android:name=".settings.Settings"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ng.techhouse.tinggqr.MainActivity" />
+        </activity>
+        <activity
+            android:name=".settings.CardSetUp"
+            android:label="@string/title_activity_card_set_up"
+            android:parentActivityName=".settings.Settings"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ng.techhouse.tinggqr.settings.Settings" />
+        </activity>
+        <activity
+            android:name=".ElectricityBillers"
+            android:label="@string/title_activity_electricity_billers"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ng.techhouse.tinggqr.MainActivity" />
+        </activity>
+        <activity
+            android:name=".UtilityDetails"
+            android:label="@string/title_activity_utility_details"
+            android:parentActivityName=".ElectricityBillers"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ng.techhouse.tinggqr.ElectricityBillers" />
+        </activity>
+        <activity
+            android:name=".CableBillers"
+            android:label="@string/title_activity_cable_billers"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ng.techhouse.tinggqr.MainActivity" />
+        </activity>
+        <activity
+            android:name=".CableBouquet"
+            android:label="@string/title_activity_cable_bouquet"
+            android:parentActivityName=".CableBillers"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ng.techhouse.tinggqr.CableBillers" />
+        </activity>
+        <activity
+            android:name=".InternetBillers"
+            android:label="@string/title_activity_internet_billers"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ng.techhouse.tinggqr.MainActivity" />
+        </activity>
+        <activity
+            android:name=".InternetBouquet"
+            android:label="@string/title_activity_internet_bouquet"
+            android:parentActivityName=".InternetBillers"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ng.techhouse.tinggqr.InternetBillers" />
+        </activity>
+        <activity
+            android:name=".Airtime"
+            android:label="@string/title_activity_airtime"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ng.techhouse.tinggqr.MainActivity" />
+        </activity>
+        <activity
+            android:name=".SendPayment"
+            android:label="@string/title_activity_send_payment"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ng.techhouse.tinggqr.MainActivity" />
+        </activity>
+        <activity
+            android:name=".PeerToPeer"
+            android:label="@string/title_activity_peer_to_peer"
+            android:parentActivityName=".SendPayment"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ng.techhouse.tinggqr.SendPayment" />
+        </activity>
+        <activity
+            android:name=".TransferToBank"
+            android:label="@string/title_activity_transfer_to_bank"
+            android:parentActivityName=".SendPayment"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ng.techhouse.tinggqr.SendPayment" />
+        </activity>
+        <activity
+            android:name=".PaymentOption"
+            android:label="@string/title_activity_payment_option"
+            android:parentActivityName=".CustomerIdentification"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ng.techhouse.tinggqr.CustomerIdentification" />
+        </activity>
+        <activity
+            android:name=".CustomerIdentification"
+            android:label="@string/title_activity_customer_identification"
+            android:parentActivityName=".ElectricityBillers"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ng.techhouse.tinggqr.ElectricityBillers" />
+        </activity>
+        <activity
+            android:name=".UpdateProfile"
+            android:label="@string/title_activity_update_profile"
+            android:parentActivityName=".settings.Settings"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ng.techhouse.tinggqr.settings.Settings" />
+        </activity>
+        <!-- <receiver android:name="com.ng.techhouse.tinggqr.timeout.TimezOutBroadcast"/> -->
+        <activity
+            android:name=".MiniStatement"
+            android:label="@string/title_activity_mini_statement"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ng.techhouse.tinggqr.MainActivity" />
+        </activity>
+
+        <service android:name=".MyFirebaseInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".navactivity.Help"
+            android:label="@string/title_activity_help"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ng.techhouse.tinggqr.MainActivity" />
+        </activity>
+        <activity
+            android:name=".navactivity.AboutUs"
+            android:label="@string/title_activity_about_us"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ng.techhouse.tinggqr.MainActivity" />
+        </activity>
+        <activity
+            android:name=".FundWallet"
+            android:label="@string/title_activity_fund_wallet"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ng.techhouse.tinggqr.MainActivity" />
+        </activity>
+        <activity
+            android:name=".FundWalletOption"
+            android:label="@string/title_activity_fund_wallet_option"
+            android:parentActivityName=".FundWallet"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ng.techhouse.tinggqr.FundWallet" />
+        </activity>
+        <activity
+            android:name=".navactivity.ContactUs"
+            android:label="@string/title_activity_contact_us"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ng.techhouse.tinggqr.MainActivity" />
+        </activity>
+        <activity
+            android:name=".AirtimePaymentOption"
+            android:label="@string/title_activity_airtime_payment_option"
+            android:parentActivityName=".Airtime"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ng.techhouse.tinggqr.Airtime" />
+        </activity>
+        <activity
+            android:name=".barcode.BarcodeCaptureActivity"
+            android:label="Barcode Scanner"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--
+        android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ng.techhouse.tinggqr.MainActivity" />
+        </activity>
+        -->
+        <activity
+            android:name=".Airtime1"
+            android:label="@string/title_activity_airtime"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ng.techhouse.tinggqr.MainActivity" />
+        </activity>
+        <activity
+            android:name=".AddAirtimeBeneficiary"
+            android:label="@string/title_activity_add_airtime_beneficiary"
+            android:parentActivityName=".Airtime1"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ng.techhouse.tinggqr.Airtime1" />
+        </activity>
+        <activity
+            android:name=".settings.LinkTinggCard"
+            android:label="@string/title_activity_link_tingg_card"
+            android:parentActivityName=".settings.Settings"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ng.techhouse.tinggqr.settings.Settings" />
+        </activity>
+        <activity
+            android:name=".ReceivePaymentOption"
+            android:label="@string/title_activity_receive_payment_option"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ng.techhouse.tinggqr.MainActivity" />
+        </activity>
+        <activity
+            android:name=".FundTinggOption"
+            android:label="@string/title_activity_fund_tingg_option"
+            android:parentActivityName=".FundWallet"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ng.techhouse.tinggqr.FundWallet" />
+        </activity>
+        <activity
+            android:name=".FundTinggBankAccount"
+            android:label="@string/title_activity_fund_tingg_bank_account"
+            android:parentActivityName=".FundTinggOption"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ng.techhouse.tinggqr.FundTinggOption" />
+        </activity>
+        <activity
+            android:name=".ConfirmBankAuth"
+            android:label="@string/title_activity_confirm_bank_auth"
+            android:parentActivityName=".settings.BankAccountSetUp"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ng.techhouse.tinggqr.settings.BankAccountSetUp" />
+        </activity>
+        <activity
+            android:name=".FundTinggByCard"
+            android:label="@string/title_activity_fund_tingg_by_card"
+            android:parentActivityName=".FundTinggOption"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ng.techhouse.tinggqr.FundTinggOption" />
+        </activity>
+        <activity
+            android:name=".WebView"
+            android:label="@string/title_activity_web_view"
+            android:parentActivityName=".FundTinggByCard"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ng.techhouse.tinggqr.FundTinggByCard" />
+        </activity>
+    </application>
+
+</manifest>
