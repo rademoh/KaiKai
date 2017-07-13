@@ -36,6 +36,8 @@ import dmax.dialog.SpotsDialog;
  */
 
 public class M {
+
+    ///can u see this chnages
     static ProgressDialog pDialog;
     static AlertDialog dialog;
     private static Context context;
